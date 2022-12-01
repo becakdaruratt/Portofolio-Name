@@ -4,7 +4,7 @@ const thumbs = document.querySelectorAll('.gallery-img');
 container.forEach(function(e){
     
     e.addEventListener('click',function(iven){
-        if(iven.target.className == 'anak'){
+        if(iven.target.className == 'gallery-img'){
             besar.src = iven.target.src;
             besar.classList.add('fade');
             setTimeout(function(){
@@ -14,7 +14,7 @@ container.forEach(function(e){
             
         }   
         thumbs.forEach(function(asli){
-            asli.className = 'anak';
+            asli.className = 'gallery-img';
         });
         
         iven.target.classList.add('active');
